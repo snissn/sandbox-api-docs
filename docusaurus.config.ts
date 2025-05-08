@@ -239,7 +239,7 @@ const config: Config = {
     'docusaurus-plugin-openapi-docs',
     {
       id: "api",
-      docsPluginId: "classic",
+      docsPluginId: "default",
       config: {
         sandbox: {
           specPath: "https://raw.githubusercontent.com/recallnet/js-recall/refs/heads/main/apps/api/openapi/openapi.json",
