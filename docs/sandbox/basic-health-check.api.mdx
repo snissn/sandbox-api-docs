@@ -1,0 +1,63 @@
+---
+id: basic-health-check
+title: "Basic health check"
+description: "Check if the API is running"
+sidebar_label: "Basic health check"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVm1v2zYQ/iuH6wC3hvySdt2Lig5Lsyztlg/FnGIDomCmqbPFWCJZknKrGfrvw1GyE8dphwkwLFHPvTwPT3fcYhArj+k1viVRhgJvEszJS6dsUEZjimcFyTWoJYSC4PT9O1AeXK210itM0JG3RnvymG7x+XTKf4f2vUkR3TeYoDQ6kA6MFNaWSgpGTm49w7foZUGV4LvQWMIUzeKWZMAErTOWXFBdMB9EqP09nA+uy+kwfscLOjiYPQ9MkD6LypYxxhrbBIOqyAdR2ce8Lo2rRMAUcxFoxNCjUGe1c6QDeHIbchAxbYK1jXd3PnVdLcgdmc86sw4OSoMnaXTu2ceGnFedQF+ny3LvwG28Enz52L700cg545BRFYXC5JjiiqLaIhSY4kRYNek2DxPsmHG9bLF2JaZYhGDTyaQ0UpSF8SF9MZ1Oj7K65NeQ04ZKY6s7jbBN7jvy6YTjjfuNGUtTHbl670xeS37Y+7jhxGTtVGhmXD1dgbwh4cid1kxjrxpHYR4RhikuIuhRFdfUgHVmo3LKeTdi3dShME79E0uWazrnDfNKr6ALB8GsSYOoQ0E69LUd5VV6aWIiKsSSu3IiZ7uZqupSBOP6otzvNJ6Mp+NjKTm1pXExnWMfIxBgSxG4WiPMd68oB+kaG4yMNSobCL2tNJWloNi7zzTEK9NPnkSudxzgolY5ZTrTV4XysRHUnvzXaI/htCxZwkCSEyCdW6N08ODoY60cRQ5LU5bmE2fSyZlyjBEMhwdaD4fpLlRjajcSVo3W1DD2z4IcQYYH68g9Z9exDnYyr/m7gUCiAkcr5YPrsmVfT455n3e16Pn1cCg//HG5W0qHQ16cz+cL4YtMy9qVMPoLLs6vIPtSPcfvSUhpah0mC1EKLclnCFnG4o/eQoYHxPe0xUKePH+R0/Lbl9/9vSrU9z/8eLsupyfPD43Puu46umospfCwwWYY8+24/CY2YhYr65jRrdiIruoyLY32AZYUZPGLCAJeg/CNlvD0Gbz+CbYcuoMIq36nBl7D4IvJDl7dwXezgx1+EqoP8XTwf5QbJF0C0FePT3fPAIMDIQcpzHspv9l2mbbzZI+9r9sghcFD5QYdsuW/9llkwT9HoXa6z39HaMwGTxnUvtrr/atxzHtDWpGWlMAn2hUlCB3rVJaKW2MoRIBC6Lwk/+CT4kdTCX4sy2YMMyKY50b6SS+UZ5VGnaNx8PPxjmA/eIWMg1eL2P046Ky21jju+FQJxZ3Ydys/3+/CbYKlkqQ93TN/NzuDy341edDGjSXtTe0kjY1bTXpjP3k3O4vt0BofKqHveXsjvJL9OQEknzoe9r7t3dnhP44lfbcP9DlMbCmUjnOYE9z2g+0ahVWYYLE/9vD04vXtdiE8fXBl2/Lyx5pcg+n1TYIb4ZRYcPe+vmmjaU4uzsI1NSynlGRZyY0oa45/dL7hUbWfsxfnV9i2/wKILkkV
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Basic health check"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/health"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if the API is running
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"API is healthy","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","description":"Health status of the API","example":"ok"},"timestamp":{"type":"string","format":"date-time","description":"Current server time"},"uptime":{"type":"number","description":"Server uptime in seconds"},"version":{"type":"string","description":"API version"}}}}}},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

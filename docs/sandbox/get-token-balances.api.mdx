@@ -1,0 +1,63 @@
+---
+id: get-token-balances
+title: "Get token balances"
+description: "Get all token balances for the authenticated team"
+sidebar_label: "Get token balances"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVglv2zYU/isPrwPcGvKRHjtUdFiaZlm2FivmdBsQGzNNPVtMKFIlKaeeof8+PEp2fDS7DBi2qHd9j9871hjEwmN6jadS2soEnCSYkZdOlUFZgyleUAChNQR7SwZmQgsjycPcOgg5gahCTiYoKQJlEEgUmKAnWTkVVpher/E1CUfutAo5pteTepKgI19a48ljusanwyH/7Du9IlEceMQEpTWBTGBxUZaafSprBjeeddboZU6F4H9hVRKmaGc3JAMmWDpbkguq8egrKcn7HcGZtZqEwUPsP5fkog9odcAHESqPdYIM9TLbMeKDU2ZxZCNCuXzDKlso90rCObHCBFWgwv9z6DEl/8JnzJzIMsc46wRFES/3XtFUxYzcA4ptnNBq1QnKXKjP+iVTFUwfWsZ7XxbHBHqtrbyNBoC1wc4jcRoodYK+JKnmSp495MNUWouZJkyDq+jQ/KhVh8YF8/L813eNeY/15pPg8+HJMdE+GCawdepPyqAH75T3yizAOlBmKbTKdgnOKnWCLz7H2BG5JTkg56xDdldQyG2GKS4o3qNg/uNAlGogmlob7FDbR3UfC6ZyGlPMQyjTwUBbKXRufUifDYfDowt7y68hoyVpWxZkAjSWsE52Dfl0wJ779EkUpaa+tMWRqffOZpVs2N7amNyX8oiLqyHhbkFvb4u9MI4oxiUVhY6cnL6/hFtaQensUmWUAbMiJzhtb6GptpxERg6qeBeNu7YbHN5GnaAycxsDUYE5gldOZKw3UkWlRbAOTt9fYoKc3yaIk/6wf5xKDm3T1Y5t9EBAqUWYW1dEMd+8ogykW5XByso5MnIFodWVtigpKLbuxwbiZ2wePYpY7zHARaUyGpuxucqV51ih8uT/DnYfTrXmFAaSHACZrLTKBA+OPlbKUcQwt1rbO46kSWfKPnrQ7e7luttNN65WtnI9UareLa1Y9recHMEY984RlG9u7PAms4rrNY4AcLRQPjS9s8+2Hh3jPm+46Pl1tys//PJ2c5R2u3w4nU5nwudjIyunofc7XJxfwfghPn+2ssYI4zEnv/cDjHEP+Ba2mMmTp88ymj9/8eUfi1x99fU3N7d6ePJ0X/msGT69q1VJKRzOnzHGeBssP4qlGEVmHSO6EUvRsG5spDU+wJyCzN+IIOAVCL8yEh4/gVffwppdNyKiVD/RCl5B58FgOy/vxTfzlQ3eCdW6eNz5L5nrJE0A0LLHp5tngM5eIjspTNtUfrFuIq2nyVZ2N2+dFDqHmes0kjX/1E8iCv46CpUzbfwbQH1WeMxC9cttvr+3jnEvySgykhK4ow0pQZjIU6kVt8aQiwC5MJkmf1BS/GgLwY9ar/owIoJpZqUftInynKVeY6gf/LS/AdjuJULG8WpE7H7sdFSVpXXc+6kQijuxb06+2+3CdYJaSTKedtQvR2fwtj1NDtq4Lcl4WzlJfesWg1bZDy5HZ7EdltaHQpgda7zBHe1Se71vfb9a/a99r50BgT6FQal5jNdt2Ot28F2jKBUm2NIMd5ahSYI831hmvZ4JTx+crms+/liR4x1ykuBSONXsANeTOsGGk3Fa3tKKEy4llWx2KXQVF6vDBZGH2XYmX5xfcTD7I2w7sto/bH2zppnVju31upGI21JdY9IG0a40k7qu/wIJ1O/c
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get token balances"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/account/balances"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all token balances for the authenticated team
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Team token balances","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"teamId":{"type":"string","description":"Team ID"},"balances":{"type":"array","items":{"type":"object","properties":{"token":{"type":"string","description":"Token address"},"amount":{"type":"number","description":"Token balance amount"},"chain":{"type":"string","enum":["evm","svm"],"description":"Blockchain type of the token"},"specificChain":{"type":"string","nullable":true,"description":"Specific chain for EVM tokens"}}}}}}}}},"401":{"description":"Unauthorized - Missing or invalid authentication"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

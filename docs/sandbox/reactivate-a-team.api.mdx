@@ -1,0 +1,71 @@
+---
+id: reactivate-a-team
+title: "Reactivate a team"
+description: "Reactivate a previously deactivated team, allowing them to participate in the competition again."
+sidebar_label: "Reactivate a team"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vvtv2zYQ/lcO7AAnhmwnfeyhosOytuuyFWhQp9iAOFjO1DliQpEsSTn1DP3vw1Gy40fTdb/MgGGLusd33x3vbikiXgeRX4iTolJGXGaioCC9clFZI3LxnlBGNcdIgOA8zZWtg15AsT4vIBJWGaDW9k6Za4glVRAtOPRRSeVYVxk+BmkrR1GxbcBrVGYoMhFI1l7FhcgvluJnQk/+pI6lyC8um8tMOPRYUSQfkoBiVA5jKTJhsCKRC/Z/WrAlWVKFIl+KuHD8JkSvzLVoMuHpY608FSKPvqbdKE9fgZ0lhGyLwft1fIJBeArOmkCBjT8+OuKfbRPnrOg3WAm1lBTCrNZ6ITIhrYlkIiuic1pJZMXRTWDt5T50O70hGUUmnLeOfFSt787qhuDUWk1oxG5M7xz55GOFBELEWAdmg6P8d1+q2Kdy10sK+/QVG22z8VUKSbTJRGKLviKYkyTYRQAHd0prmBJwLg9F030y8fTBzKgAqD1hsYDOaRI/3hf/YLCOpfXqbypgAOleAB+RiV3WYF1NycjTB3waG2Fma5PEnn0O2pj8nDyQ99YLDqCiWNqCK9yGlBAu9FyM0KkRMpIRpy6Mlm3NN6ONOuWbxObae1J7LXJRxujy0Uhbibq0IeZPjo6O9th9y6+hoDlp6yoyEVpLosk2DYV8xECG9Akrp2kobbVn6szbopZt2XU2Lu+v+JirvC2uzYu+Tj97Wd3jVA5JaL8azk7hlhbgvJ2rgopVeznpEtcmqSQsyEMduCm17iDaW9rNZiJemZlNQFTU7PncY8F6Y1XVGqP1cHJ2KjLB/LYgjodHw30qGdrM+gRn38aAm6jGOLO+SmKhfUUFSL9w0craezJyAbHT3eiYYWIgfSbm0aMU60ZFvqlVQRMzMeelCowV6kDhS2EP4URrpjCSZABkCmeViWFV3SmGmV219ZbOnH0MoN/f4rrfz1euFrb2A3RqcEsLlv2jJE8wEVvngu9jythuJovapxnSdtNrFWLbxIZs69F+3K/bWgz8ut+XH96/XR3l/T4fXl1dTTGUEyNrr2HwJ7x5fQ6Th+q5vWhS2trE0RQ1GklhImAyYfIHv8JEbAW+Dhun8vjxk4JmT599+9d1qb77/oebW310/Hhb+WU7BQbnC0c57A6CiUh421h+wzmOU2XtR3SDc2yrbmKkNSHCjKIsX2FEeAEYFkbCwSG8+BGW7LoVQad+pwW8gN6DYHvP78VXI48N3qHqXBz0/gtzvawFAF31hHz1DNDbIrKXw1VH5TfLFmlzla1lN3nr5dDbZa7XSjb80xymKPjrKdbedPhXAQ1Z4YCFmudrvn+xnuOek1FkJGVwR6uiBDSpTqVW3BpjiRFKNIWmsDsXsI62Qn7UejGEMRFcFVaGUUdUYJYGraFhDFfDVYDdgoAyLQjdXsNOx7Vz1vMooAoVd+LQnvy02YWbTGglyQTaUD8dv4S33Wm208atIxNs7SUNrb8edcphdDp+mdohj58KzYa1rUUw7Q87rW95v+L8H1tjNzEifYojp1EZJiEFueym5oVAp0Qm0twU7dITRCby9b64MTwvM8HzkbWWyykG+uB10/Dxx5o876aXmZijVzjl+XCxFIUK/L8Q+Qx12F0pN9k4eN+tC4fwxUXzgaC6QzS8Rs5R1/wkMnFLi/vlt7lsMtFesoSufXkiJbm4oba3evJ0Xi8dZ+/G50zY9lBeD+HuD5v/LKblspU452nTNPcQ+ZkRNs0/HMRQSQ==
+sidebar_class_name: "post api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reactivate a team"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/admin/teams/{teamId}/reactivate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Reactivate a previously deactivated team, allowing them to participate in the competition again.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"teamId","schema":{"type":"string"},"required":true,"description":"ID of the team to reactivate"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Team reactivated successfully","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"team":{"type":"object","properties":{"id":{"type":"string","description":"Team ID"},"name":{"type":"string","description":"Team name"},"active":{"type":"boolean","description":"Active status (will be true)"}}}}}}}},"400":{"description":"Team is already active"},"401":{"description":"Unauthorized - Admin authentication required"},"404":{"description":"Team not found"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

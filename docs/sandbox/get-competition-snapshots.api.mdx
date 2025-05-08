@@ -1,0 +1,71 @@
+---
+id: get-competition-snapshots
+title: "Get competition snapshots"
+description: "Get portfolio snapshots for a competition, optionally filtered by team"
+sidebar_label: "Get competition snapshots"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVwtv2zYQ/isHdoBTQ36kTfdQ0WFZ2mXeOqyo021AHCw0dY6YUKRKUm41Q/99OFK2ZTtpO2AGDNvUPb777nh3XjHPbxxLL9lpVkjNrhKWoRNWll4azVJ2jh5KY/3CKGnAaV663HgHC2OBgzBFiV6SbAIm6HClalhI5dFiBvMaPPKCJcyhqKz0NUsvV+xH5BbtaeVzll5eNVcJK7nlBXq0LghI8l1yn7OEaV4gS1nH1yQjgyLHgrN0xXxdkoDzVuob1iTM4vtKWsxY6m2F+yFNXoJZgM+xC581Sev1fYW23rol+F/ub8GVO3D4e0tMoAImL8GblqEtoYxIsOhKox068vJkPKaPXVNnW8Qd3YQJoz1qTwq8LJUUnERGt460VofYzfwWhWcJK60p0XoZfbpKCHSuIzg3RiHX7DAmtDzCiDrgPPeVIzq2wLZ2uLWcWJUeC/d5IDI7JHofwrR1A5OX5HW3Pj6r3WUyGmgz/VnNi5jFoGI8V39wVWFHTVfFHO2hGsl27tKS1ID7TR7BywKDVVmg87wo78OyMLbgnqUs4x4HQeVBYraGmvUrYSf31dVv0jmpb2CHRDA2lqw2HqTeuy7sZHx8aOid5pXPjZX/YAYDCF0F6Ai1b6sSNtclGDn5dJV3MSxMpYPWs/timKJdogW01lhGkRboc5OxlN1gqDBqJykb8VKOOOEadQIarXZCb0bd2+WC5diZKqtYynLvy3Q0UkZwlRvn06fj8fggEa/pMWS4RGXKArWHaCk0m60hl44I1BA/8qJUOBSmODD1xpqsEvHCtTautk11Svc73pxua91UD3lZt7Bwq4PQgZPTNxO4wxpKa5Yyw4ySTn3ytE1pTF+OPEMLVSiY6A68ucP9PIccSL0wAYj0ijxfWJ6R3lQWleLeWDh9M2EJI34jiOPheHhIJUGjmUNwDm0MgEOpuKfLEcRcfIQZCFuX3ojKWtSiBt/qdrLtZhrCa6YfPQqxdmr1vJIZzvRMX+TSEVaoHLpPhT2EU6WIQo+CAKDOSiO1d+u6DzEsjFLmAyGJdKbkYwD9/g7X/X66dlWbyg54KQd3WJPsnzlahBnbOWcgXczYfiazivpHvEoWb6TzsX0Pydajw7hfxVp09LjfF+/evl4fpf0+HV5fX8+5y2daVFbB4C84f3UBs4fqOV46IUyl/WjOFdcC3YzBbEbkD36GGdsJfBM2n4vjJ08zXJw8+/rvm1x+8+13t3dqfPxkV/kszr/BRV1iCvsjcMYC3hjLL3zJp6GyDiO65Useq26mhdHOwwK9yF9yz+EFcFdrAUeP4cX3sCLXUYSX8les4QX0HgTbe74VXw95MviBy9bFUe+/MNdLIgBoq8el698AvR0ieylct1R+tYpIm+tkI9vlrZdCb5+5XpRs6KN5HKKgt0VfWd3iXwc0JIUjEmqeb/j+yViKe4laohaYwAdcFyVwHepUKEmt0efcQ851ptDtTwxeeVNw+qlUPYQpIlxnRrhRS5QjlgbR0NC76+E6wHY14iKsRu1KR06nVUmjmCUMCy6pE7t48kO3CzcJU1KgdthRn0zP4HV7muy1cVOidqayAofG3oxaZTeaTM9COyyN8wXXHWu0YIsHtrqdFrjaLnn/31bezgePH/2oVFyGwR5CWrXz8pLxUrKEhYnJdtYslrD0YCvfwL9KGE1GsrBazbnDd1Y1DR3HDZuGaSYdn6uHFuduxF+0Qz8Qzx3W3UV+Gfc1FibokltJEP4jnKO37Q7zGO7/O/EAlPU2rOsukDXEXTKbqyZh8X4HdFHmVAgsfUf7YN+nsDarz/mrC0re7jqwGf/tF7J+L7LVKkpc0Jxrmg3QMPcIYNP8C/cs+M4=
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get competition snapshots"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/admin/competition/{competitionId}/snapshots"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get portfolio snapshots for a competition, optionally filtered by team
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"competitionId","schema":{"type":"string"},"required":true,"description":"ID of the competition"},{"in":"query","name":"teamId","schema":{"type":"string"},"required":false,"description":"Optional team ID to filter snapshots"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Competition snapshots","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"snapshots":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Snapshot ID"},"competitionId":{"type":"string","description":"Competition ID"},"teamId":{"type":"string","description":"Team ID"},"totalValue":{"type":"number","description":"Total portfolio value at snapshot time"},"timestamp":{"type":"string","format":"date-time","description":"Snapshot timestamp"}}}}}}}}},"400":{"description":"Missing competitionId or team not in competition"},"401":{"description":"Unauthorized - Admin authentication required"},"404":{"description":"Competition or team not found"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

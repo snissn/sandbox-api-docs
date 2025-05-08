@@ -1,0 +1,71 @@
+---
+id: get-a-teams-api-key
+title: "Get a team's API key"
+description: "Retrieves the original API key for a team. Use this when teams lose or misplace their API key."
+sidebar_label: "Get a team's API key"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VmlvGzcQ/SsDpoAcYXU4R48NUtR1XNdtgAaRjBawhIrmjrS0uSRDcuWowv73YsiVrCNp0w8VIEjLnePN41xrFvjCs/yGnRWV1GyasQK9cNIGaTTL2XsMTuISPYQSwTi5kJorOHt3Bfe4grlxwCEgr/pw7RFCKT08lKjjmQdlPGlBJb1VXJAASrdR77OMeRS1k2HF8ps1+xG5Q3dWh5LlN9NmmjHLHa8woPNRQBImy0PJMqZ5hSxn5OiqIEuixIqzfM3CytIbH5zUC9ZkzOGHWjosWB5cjYcxXr0BM4/xkS1Gbh16a7RHT+aeDYf0s6+0YcC1BBXgayHQ+3mt1IplTBgdUAfS5NYqKThpDu48qa+P0ZrbOxSBZcw6Y9EFmZy3VncEb41RyDU7DOM3iy762CABH3ioPREQA/tXX7I4Zu/Qyxh5BVdvyGi6gC9SiKJNxriVv+LqC5Tay+j4Ta6wpv1k7MXw9Pg+rjWvQ2mc/AsL6EFMZ6Aj1KHlHrZpEI08PzZyzrU2YXun+2meLAphah18MvHi2EQK1wSYm1pHTy8/lT4jdEt0gM4ZxyioCkNpCpazBcaLoRzP2YBbOYieB7GgBuuU7s2AKKHqITOpNmqnWM7KEGw+GCgjuCqND/nz4XB4xO9beg0FLlEZW6EOkCyxJts15PMBIejjR15ZhX1hqiNT75wpapHyrrUxfSzrEaV5yq7d4t7eP3nZ1G5M7ih05GRzEdaZpSywAKljwZ61d57ut0ReoIPaS72A5A6CucfDRIiESz03EYgMijyPHS9IbySrWvFgYpdiGSN+E4jT/rB/TCVBo/wgOMc2esDBKh7mxlVRzKdXWIBwKxuMqJ1DLVYQWl1hKotBknU/0RA/E/3kSYx1J5kva1ngRE/0mHouoag9+n8Kuw9nShGFAQUBQF1YI3Xwm8KIMcyNUuaBkCQ6c/LRg253j+tuN9+4Wpna9biVvXtckezvJTqECds7ZyDTCDm6yaKmDhCrHRwupA+pi/XJ1pPjuC9SLnp63e2K6/dvN0d5t0uHs9nslvtyokXtFPT+gMuLMUw+l8+pwlJVD2654lqgnzCYTIj83s8wYXuBb8Pmt+L02fMC5y9efv3nopTffPvd3b0anj7bVz5PY6A3XlnM4XASTFjEm2L5hS/5KGbWcUR3fMlT1k20MNoHmGMQ5RseOLwG7ldawMlTeP09rMl1EkndFl5D57NgO68exTdDjww+cNm6OOn8F+Y6WQIAbfb4fPMM0NkjspPDrKXyq3VC2syyrewub50cOofMdZJkQz/N0xgFfR2G2ukW/yagPimckFDzasv3T8ZR3EvUErXADB5wk5TAdcxToSS1xlDyACXXhUJ/OFJ4HUzF6VGpVR9GiDArjPCDlihPLPWSoX7ws/4mwHZD4CJuCO0uQ05HtbXG0QzAikvqxD6d/LDbhZuMKSlQe9xRvxqdw9v2NDto48ai9qZ2AvvGLQatsh9cjc5jO7TGh4rrHWuXGNrdbmcKH3S/9eOa8/+viu3ICPgxDKziUhMLMcp1Oy9vaMFgGYsTk6W1x7OM5dslkWKYZowmI4mv17fc47VTTUPHH2p0tIlOM7bkTvJbmgw3a1ZIT/8Lls+58ocL5C4JJ+/bHeMpHKyVn8HfHnJN3C65qumpBbpdbptpk7FUUBFPenkmBNqwo3a0Z9Ik3i4WlxdjomZ//m7nbfuHrH8S0nqdJMY0WJrmESE9E8Cm+Rs4AzvF
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a team's API key"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/admin/teams/{teamId}/key"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves the original API key for a team. Use this when teams lose or misplace their API key.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"in":"path","name":"teamId","schema":{"type":"string"},"required":true,"description":"ID of the team"}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"API key retrieved successfully","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"team":{"type":"object","properties":{"id":{"type":"string","description":"Team ID"},"name":{"type":"string","description":"Team name"},"apiKey":{"type":"string","description":"The team's API key"}}}}}}}},"401":{"description":"Unauthorized - Admin authentication required"},"403":{"description":"Cannot retrieve API key for admin accounts"},"404":{"description":"Team not found"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

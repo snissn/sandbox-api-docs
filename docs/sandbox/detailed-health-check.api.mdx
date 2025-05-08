@@ -1,0 +1,63 @@
+---
+id: detailed-health-check
+title: "Detailed health check"
+description: "Check if the API and all its services are running properly"
+sidebar_label: "Detailed health check"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVguPEzcQ/isjUykQbR5A6WMRVelBgZaqqDnUSpdTM/FOsr547cX2BrbR/vdqvJtcHsdRaKQoiTOv79uZb7wRAZdepBfiJaEOubhMREZeOlUGZY1IxVlOcgVqASEnePrmFaDJALUGFTx4cmslyQM6AlcZo8wSSmdLcroWiXDkS2s8eZFuxIPxmD8Owz+jgEpTBnnMDz5gqLxIhLQmkAnsgWWplUT2GF15dtsIL3MqkL+FuiSRCju/IhlEItr0QbVJu3jXdj44ZZbiGObva3KM6qAMsDvYIhH0AYtSx1wr0SQiqIJ8wKK8KfrCugKDSEWGgQZsepLyrHKOTIgkkoNo0ySiKuO365imKubkTtwnrVtrDsqAJ2lN5jnGmpxXLVG3w+YHujVuErF9njfxepR9R5AymVqrrEK9a4eTp1A6JencoVyR+3RRkwPyoy+E1nmb4obHMUeNRtJvaHD5+Vk6byha91vyBIcZTVRRaQz2s/NEb/Bb91vySFuUFBRH+UJMexH+Cy7C4gsTsesnM3SvRDy6SQe6bibnrBNsVVDIbSZSsaQ41RhykYoRlmrUzugo66RDtH1LjnVsIyqnRSryEMp0NNJWos6tD+nD8Xh8AuM1/w0ZrUnbsrgeRtEk+4F8OuLEww7QUNriJNQbZ7NKRq63MS65MFk5FeoJy1U7Cz8ROnJPK8azo5mzMI5oJlIxj0Y3juuKapbYtcoo47GPAlWF3Dr1T9RI1rCMlcGzGrfpINgVGcAq5GRCJ6aRZ2UWNhaiQnxU5w4z9tt1eKd+O0kR94fj4SmVXNrCuljOaYwBIJQaA8tiNOsmgDKQri6DlVEMZR0HhH33mtdPDcTX1Ny5E7FeY4AXlcpoaqbmPFc+LqjKk78N9hCeas0UBpJcAJmstMoED47eVcpRxLCwWtv3XElLZ8o5BtDvH3Dd76fbVLWt3ABLNVhRzbZ/5uQIpuLgXIDyu0168CSzigetHSVHS+WDa6vlWHdOcT9ve9Hz3/2+fPvH6+1R2u/z4Ww2m6PPp0ZWTsPgL3jx/BymH+vnOFgopa1MGHVi6KcCplMmf/ASpuIA+A42zuX9Bw8zWnz96Ju/l7n69rvvr1Z6fP/BofNZu84H53VJKRxv9KmI9bZYfsE1TmJnnSK6wjW2XTc10hofYEFB5s8wIDwB9LWRcPcePPkBNpy6NcFS/Uo1PIHeR4vtPb42315aOOB7VF2Ku73PYa6XtAVA1z0+3f4G6B0Q2Uth1lH51aattJklO9t93nop9I6Z67WWDX809yIKfjsKlTNd/VtAQ3a4y0bN4x3fP1vHuNdkFBlJCbynbVMCmtinUiuWxpBjgBxNpvnCd9iNWAVbIP/Uuh7ChAhmmZV+1BHlmaVBG2gY/Gy4Bdjd9FDGm57BqH6cdFKVpXUs/VSgYiX27cmP+yrcJEIrScbTnvuryRm87k6TIxm3JRlvKydpaN1y1Dn70avJWZTD0vpQoNmLdnxDlXwhPpa/zfV99f/dmLt9EOhDGJUaVbyWRQibbgdeCCyVSERbTiyk24OXieBVxyabzRw9vXW6afj4XUWuFunFZSLW6BTOWeovLpsYJeOFf7ERK6qZeympZNrXqCsu5eT2zXttt51fPD8XTfMvZl5GXw==
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Detailed health check"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/health/detailed"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Check if the API and all its services are running properly
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Detailed health status","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","description":"Overall health status of the API","example":"ok"},"timestamp":{"type":"string","format":"date-time","description":"Current server time"},"uptime":{"type":"number","description":"Server uptime in seconds"},"version":{"type":"string","description":"API version"},"services":{"type":"object","description":"Status of individual services","properties":{"priceTracker":{"type":"string","description":"Status of the price tracker service","example":"ok"},"balanceManager":{"type":"string","description":"Status of the balance manager service","example":"ok"},"tradeSimulator":{"type":"string","description":"Status of the trade simulator service","example":"ok"},"competitionManager":{"type":"string","description":"Status of the competition manager service","example":"ok"},"teamManager":{"type":"string","description":"Status of the team manager service","example":"ok"}}}}}}}},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

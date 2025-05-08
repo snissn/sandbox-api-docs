@@ -1,0 +1,63 @@
+---
+id: get-upcoming-competitions
+title: "Get upcoming competitions"
+description: "Get all competitions that have not started yet (status=PENDING)"
+sidebar_label: "Get upcoming competitions"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vgtv2zYQ/isHdoBTQ36kjz00ZFiWZlm2rgvmFB0QG8uFukRMKFIlKaeeof8+HCU7sp22KLAZMGxRx+++e99SBLzxIr0QR7YoKaigrBGzRGTkpVNlfEzFCQVArUE+CHkIOQbIcU5gbAAf0AXKYEEB9nzAUPmDs+M3r07fnDwVifAkK6fCQqQXS/EToSN3WIVcpBezepYIR760xpMX6VI8G4/5Z5PC21LaQpmbTQ6OglM0pwx8JSV5f11pvRCJkNYEMoFxsCy1ksgXRreewZbCy5wK5H9hUZJIhb26JRlEIkpnS3JBNVRa1I7glbWa0IhtF/1Rkos6VkygcYKomcwD5Q4UOofMVQUq/Oe5qKwj44NT5maHRSeKcPqKdRss6MvuxRv1lsQugKm0xitNIg2uok8Bdt/UiWj98ggkmargXGzzZjcPu6gNDOyhvseFh3Wu1YlAre39kbPeH+WozLnDjBV8Pojvcgo5OZB8dyD5MoTmNigPEZeyGFJHGCg7DI/ZcW1dgUGkIsNAg6AKekyTgZBTN53hHj20wKyjKrP/R4dGH6BFF/Xqk4gX4/1HCs9gFXLr1D+UwQB+V96zO6wDZeaoVQb8nkxoa4yZv3ysgifk5uSAnLNOsLqCQm4zkYobitmO3A/ECEs16jAeVW3lxy7CED42kcppkYo8hDIdjbSVqHPrQ/p8PB7veOI1v4aM5qRtWZAJ0CCJOukC+XTE2of0AYtS01DaYgfqzNmskk0Gthizh/Y24b7SlGu3ya3Dx1rYjijGiRiFdpQcnp3CHS2gdHauMspANYE8bCPRNJqcMCMHVYxHow6CvSOzE5E6Ecpc20hEBa5Z0RYFTFRRaQzWweHZqUgE+7chsT8cD3ddydSurYt0djEGgFBqDJydUcw3rygD6RZlsLJyjoxcrMuq2xunBuJnap48ibY+2AAnlcpoaqbmPFeeuULlyX/K7CEcas0uDCSZAJmstMoEnhrvK+Uo2nBtuaiZSePOlHUMoN/f8HW/n65ULWzlBliqwR0tWPZdTo5gKjbOBbeLGLHtSGYVFzAEwgIc3SgfmrExZKwnu3YfN7no+XW/L9/++Xp1lPb7fHh5eXmFPp8aWTkNg7/g5Pgcph/L51hdKKWtTBhdoUYjyU8FTKfs/MEvMBUbhq/Nxiu5/+x5RtcvXn79902uvvn2u9s7Pd5/tnn5qJm7g/NFSSlsj96piHwbW37FOU5iZu1adItzbLJuaqQ1PsA1BZm/woBwAOgXRsLeUzj4AZasuhHBUv1GCziA3kfJ9r5/EF/tHAx4j6pVsdf7Es/1koYAtNnj09UzQG/Dkb0ULltXfrVsmNaXyVq267deCr1tz/UayZp/6qfRCv46CpUzLf+VQUO+sMdC9fdrf/9sHds9J6PISErgnlZJCWhinkqtuDW2e53JNPmtkuJHWyA/ar0YwoQILjMr/ah1lGcvDRqgYfCXw5WB7UqGMg6zZimJvWRSlaV13P+pQMWd2DcnP3a7cJ0IrSQZT53rp5MjeN2eJltt3JZkvK2cpKF1N6P2sh+dTo5iOyytDwWaDhrvuNVjS+Z2C1w+LJf/wWLcDoZAH8Ko1Kji/Iy2LNuJeCGwVGJji2RzV1NxlggefCy3XF6hp7dO1zUfv6/I8cI9S8QcnWqWtYtZnYgmWeMYvaMFR0JKKjkIc9RV3E23l2aecuuBfXJ8LhKBm7NtPcvaP4y+2nTNooO9XDYS59y061okLYnYxEU9q+v6X/G/ZXA=
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get upcoming competitions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/competition/upcoming"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get all competitions that have not started yet (status=PENDING)
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Upcoming competitions retrieved successfully","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"competitions":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Competition ID"},"name":{"type":"string","description":"Competition name"},"description":{"type":"string","nullable":true,"description":"Competition description"},"status":{"type":"string","enum":["PENDING"],"description":"Competition status (always PENDING)"},"allowCrossChainTrading":{"type":"boolean","description":"Whether cross-chain trading is allowed"},"createdAt":{"type":"string","format":"date-time","description":"When the competition was created"},"updatedAt":{"type":"string","format":"date-time","description":"When the competition was last updated"}}}}}}}}},"401":{"description":"Unauthorized - Missing or invalid authentication"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

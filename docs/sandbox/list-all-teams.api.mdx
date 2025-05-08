@@ -1,0 +1,63 @@
+---
+id: list-all-teams
+title: "List all teams"
+description: "Get a list of all non-admin teams"
+sidebar_label: "List all teams"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVoluGzcQ/ZUBU0CJsDqco8cGKao6ievWQI3KQQtYQkVxR1raXJIhuUpUYf+9GHIl60iCFKgAwxL3zZuZt3NwwwJfepbfslFRSc2mGSvQCydtkEaznF1gAA5K+gBmAVwp0Eb3OIEhIK88y5hHUTsZ1iy/3bCfkTt0ozqULL+dNtOMOfTWaI+e5Rv2dDikf4dOrlr6LaEwOqAOBOTWKik4AQd3ntAb5kWJFadvYW2R5czM71AEljHrjEUXZPLlayHQ+z3g3BiFXLPjLH+36KIPaG3ABx5qz5qMpaAeOLhzfM0yJgMenH8mCFnsYXxwUi9P3N8gr+DyNXnTvMKvNIjQJmNYcam+0iZhmyQxF+EaXSvql43PExxsxO9cC4c8YDEKn2JYGFfxwHJW8IC9ICs8oR0JYWodIPKQ/ITygVeW2Gtb/C/siWefe/vJ2PPh2Wk9vtO8DqVx8h8soAexNYCOUIe2GMHh+1o6LCjQF58q6jG6FTpA54xj5KrCUJqC5WyJsUw4tQgbcCsHsZ8GD/1Elj62U+0Uy1kZgs0HA2UEV6XxIX82HA5P8r2ix1DgCpWxFeoAiYk12T6RzwfktI8feWUV9oWpTqiunSlqkTqi5Zg+NPqYGjCV9367714SeaE8IozaLoJO38/1JdzjGqwzK1lgATRTSoRRK34SukReoIPaS72E5A6CucfjNxI1lnphYiAyKPJ843hBdmNZ1YoH42B0fckyRvqmIM76w/6plBTawrgYzilHDzhYxQPVYIT59AgLEG5tgxG1c6jFGkJrK0xlMUhi9xMN8TPRjx7FXPeq6qKWBU70RN+U0lOsUHv0X0q7DyOlSMKAggJAXVgjdfDbCo05LIxS5gNFkuTMyUcPut0DrbvdfOtqbWrX41b27nFN2D9LdAgTdnDOQPr0xo7fZFFTm8aBDg6X0oc0X/vE9eg07zepFj097nbFuz+utkd5t0uHs9lszn050aJ2Cnp/wcWbG5h8rp5TU6X2H8y54lqgnzCYTEj83i8wYQeJ79Lmc3H29FmBi+cvvv17Wcrvvv/h7l4Nz54eGp+nBdW7WVvM4XhHTViMN+XyK1/xcays04zu+IqnqptoYbQPsMAgytc8cHgF3K+1gMdP4NWPsCHXCcKt/A3X8Ao6nw228/IBvt2+RPiBy9bF485/Ua6TpQCgrR6fb38DdA6E7OQwa6X8ZpMibWbZDruvWyeHzrFynYRs6F/zJGZBfw5D7XQb/zahPhk8JlDzcqf3W+Mo7xVqiVpgBh9wW5TAdaxToSSNxlDyACXXhUJ/PNt5HUzF6adS6z6MEWFWGOEHrVCeVOolon7ws/42QbZbrDSE0i6Ps2RcW2scjf12WzOfTn7an8JNxpQUqD3umV+Oz+GqPc2OxrixqL2pncC+cctBa+wHl+PzOA6t8aHieo8tXrXoGrddNgdzb/Nw9fqqm1877wN+DAOruNRxbbt4G0n77ZZxK1nGoh3b3qamGaM1Ro83mzn3+M6ppqHj9zU6ukhOM7biTvI5jfHbaZOxVHpxKd7jOq13tCTpiqs63syO74q0s3Zb9+LNDcVxuKl2m6n9Quzbe55e73FvNglxQyO4aVjWBhFHMmumTdP8C0NW6MY=
+sidebar_class_name: "get api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List all teams"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/admin/teams"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a list of all non-admin teams
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"List of teams","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"teams":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"Team ID"},"name":{"type":"string","description":"Team name"},"email":{"type":"string","description":"Team email"},"contactPerson":{"type":"string","description":"Contact person name"},"createdAt":{"type":"string","format":"date-time","description":"Account creation timestamp"},"updatedAt":{"type":"string","format":"date-time","description":"Account update timestamp"}}}}}}}}},"401":{"description":"Unauthorized - Admin authentication required"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

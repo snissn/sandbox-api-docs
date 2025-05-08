@@ -1,0 +1,63 @@
+---
+id: reset-team-api-key
+title: "Reset team API key"
+description: "Reset the API key for the authenticated team. This will invalidate the current API key and generate a new one."
+sidebar_label: "Reset team API key"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VmuPGjcU/StXTiUSNDx2kzTJRKm6TdM07bZZBaJWWlAxngvjXWNP/IBM0Pz36toDC0tTqV+KhGA81+e+js/1lnm+dCy/ZhdCmKA9m2asQCesrLw0muXsAzr04EuEi6t3cIs1LIyNzzz4ErWXgnsswCNf9WFcSgcbqRRIveZKFtxjNBbBWtR+D8J1AUvUaMmAg8YNGI19ljGHIljpa5Zfb9kPyC3ai+BLll9Pm2nGLLrKaIeO5Vt2PhzSz3HEOxc2Ru6CEOjcIihVs4wJoz1qT7t4VSkKXho9uHG0dcucKHHF6Z+vK2Q5M/MbFJ5lrLKmQutlctyiHhjOjVHINbtfv/cV5SiN3kUCznMfHGsyxiv5K9YHIM5bqZcnGL/jZl84byA4jE1YBB8sgsVPAZ13LGP4ma8qRUgaN2fnj2+xfvL0278+11+ePX/B54I18ZOxJ8Oz08J91NRSY+UXLKAHv0nnpF6CsbtmHractkSgJ6dAY+Qr0MbDwgRdkNnTf2rUCO0aLaC1xjKKaoW+NAXLWWVcrDmnvrMBr+SAJ4IOYld7vJK9W6wjXQjERbYEq1jOSu+rfDBQRnBVGufzx8Ph8KSml/QaClyjMtWKqJmQWJMdArl8QO77bWX7wqxOoK6sKYJIPW4xpnc8HhGlEmsO2bzvOXmhPKIZESkanTjZ9b+yZi0LLEDqdCrbliWOlcgLtBBi45I78OYW9UnrmoxJvTAxEOkjZ8aWF7RvJFdBcW8skY5ljOqbgjjrD/unpaTQdqJwitEDDpXifmHsKpq59AoLELauvEnSIGrw7V5hVhV6SehuoiF+JvrBg5jrXQ7wNsgCJ3qio+pQFMGh+7e0+3ChFJXQo6AAUBeVkdq7eIikTVq1MEqZDUWSypmTjx50u0e17nbznavaBLujJNn+UaJFmLCjdQbSHenovpNFoFMfFRQsLqXzSTH6hPXgNO83iYuOXne74uOHy91S3u3S4mw2m3NXTrQIVkHvT3j7ZgyTr/H56HjNueJaoJswmEyo+L2fYcKOEt+nzefi7PxxgQvSmGUpnz1/cXOrhmfnx5tfJ8ntjesKc7ivuhMW4025/MLXfBSZdZrRDV/zxLqJFkY7Dwv0ovyRew6vgLtaC3j4CF59B1tynUySwsIr6Hw12M7LO/PdcCHADZeti4ed/1K5TpYCgJY9Lt89A3SOCtnJYdaW8pttirSZZXvbw7p1cujcr1wnWTb00zyKWdDXog9Wt/HvEurThodk1Lzc1/snYynvNWqJWmAGG9yREriOPBVKkjT6knsouS4UuntHih7NitOjUnUfRogwK4xwg7ZQjqrUS0B972b9XYLtNOYiTmPNo/qR01GoKmNpAOCKS1Jil1a+P1ThJmNKCtQOD7a/G72Gy3Y1uyfjpkLtTLAC+8YuB+1mN3g3eh3lkIbOiusDtPbuQ+eyPbT3tW97d6H4/29K7QDx+NkPKsVlHMgx5207Oq/pisEy1nKUxevTwficZowmJBlut3Pu8KNVTUPLnwJauoJNM7bmVvI5TYjraZOxxOo4bwkip6sjVoS95ipQQCcXKxqH+9l+9X40ppCOp+B+6rV/CL59xXV9AL7dJosxyXvTsKyNIso9a6ZN0/wNggvBFw==
+sidebar_class_name: "post api-method"
+info_path: docs/sandbox/trading-simulator-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reset team API key"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/account/reset-api-key"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Reset the API key for the authenticated team. This will invalidate the current API key and generate a new one.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"API key reset successfully","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Operation success status"},"apiKey":{"type":"string","description":"New API key to use for future requests","example":"new123key456_xyz789abc"}}}}}},"401":{"description":"Unauthorized - Missing or invalid authentication"},"404":{"description":"Team not found"},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

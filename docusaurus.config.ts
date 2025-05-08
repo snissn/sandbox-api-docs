@@ -70,9 +70,9 @@ const config: Config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            label: "Petstore API",
+            label: "Sandbox API",
             position: "left",
-            to: "/docs/category/petstore-api",
+            to: "/docs/sandbox/trading-simulator-api",
           },
           {
             href: "https://github.com/facebook/docusaurus",
@@ -234,30 +234,28 @@ const config: Config = {
         },
       ],
     } satisfies Preset.ThemeConfig,
-
-  plugins: [
-    [
-      "docusaurus-plugin-openapi-docs",
-      {
-        id: "openapi",
-        docsPluginId: "classic",
-        config: {
-          petstore: {
-            specPath: "examples/petstore.yaml",
-            outputDir: "docs/petstore",
-            downloadUrl:
-              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
-            sidebarOptions: {
-              groupPathsBy: "tag",
-              categoryLinkSource: "tag",
-            },
-          } satisfies OpenApiPlugin.Options,
-        } satisfies Plugin.PluginOptions,
+    plugins: [
+  [
+    'docusaurus-plugin-openapi-docs',
+    {
+      id: "api",
+      docsPluginId: "classic",
+      config: {
+        sandbox: {
+          specPath: "https://raw.githubusercontent.com/recallnet/js-recall/refs/heads/main/apps/api/openapi/openapi.json",
+          outputDir: "docs/sandbox",
+          sidebarOptions: {
+            groupPathsBy: "tag",
+                categoryLinkSource: "tag", // 👈 This enables generated-index support
+          },
+          downloadUrl: "https://raw.githubusercontent.com/recallnet/js-recall/refs/heads/main/apps/api/openapi/openapi.json",
+        },
       },
-    ],
+    },
   ],
+],
+themes: ["docusaurus-theme-openapi-docs"],
 
-  themes: ["docusaurus-theme-openapi-docs"],
 };
 
 export default async function createConfig() {
